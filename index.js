@@ -71,5 +71,5 @@ client.once('ready', () => {
 
 token = ""
 
-
+.listen(process.env.PORT || 5000)
 client.login(process.env.DISCORDJS_Token);
