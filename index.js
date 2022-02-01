@@ -2,6 +2,11 @@ const { Intents, Client } = require('discord.js');
 
 // wordss i have to replace: **"+ sender +"**, **The Wise**, Matrix, The Hand of **The Wise**
 
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
+
 /*
 let winner = [
     "**"+ sender +"** : What is happening to me?\n**The Wise** : You are the One, **"+ sender +"**. You see, you may have spent the last few years looking for me, but I have spent my entire life looking for you."
@@ -71,5 +76,4 @@ client.once('ready', () => {
 
 token = ""
 
-.listen(process.env.PORT || 5000)
 client.login(process.env.DISCORDJS_Token);
